@@ -2,18 +2,23 @@ package Services;
 
 import Entity.User;
 
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
 
     @Override
     public User add(User user) {
         User newUser = new User();
 
-        newUser.setId(user.getId());
-        newUser.setAge(user.getAge());
-        newUser.setFirstName(user.getFirstName());
-        newUser.setLastName(user.getLastName());
-        newUser.setCreateDate(user.getCreateDate());
+        if (user.getAge() > 18) {
+            newUser.setAge(user.getAge());
+
+            newUser.setFirstName(user.getFirstName());
+            newUser.setLastName(user.getLastName());
+            newUser.setCreateDate(user.getCreateDate());
+            newUser.setId(user.getId());
+        } else {
+            return null;
+        }
 
         return newUser;
 
@@ -21,7 +26,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void delete(int id) {
-        System.out.println( id + " id'li kullanici silindi...");
+        System.out.println(id + " id'li kullanici silindi...");
     }
 
 
