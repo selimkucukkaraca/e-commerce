@@ -1,24 +1,21 @@
-package Entity;
+package entity;
 
 import java.util.Date;
 
-public class User {
-
+public class Seller {
     private int id;
     private String firstName;
     private String lastName;
-    private int age;
-    private Date createDate;
+    private Date since;
 
-    public User(int id, String firstName, String lastName, int age, Date createDate) {
+    public Seller(int id, String firstName, String lastName, Date since) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.age = age;
-        this.createDate = createDate;
+        this.since = since;
     }
 
-    public User() {
+    public Seller() {
 
     }
 
@@ -46,19 +43,22 @@ public class User {
         this.lastName = lastName;
     }
 
-    public int getAge() {
-        return age;
+    public Date getSince() {
+        return since;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setSince(Date since) {
+        this.since = since;
     }
 
-    public Date getCreateDate() {
-        return createDate;
-    }
 
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
+    @Override
+    public String toString() {
+        return "Seller{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", since=" + since +
+                '}';
     }
 }

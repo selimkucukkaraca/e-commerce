@@ -1,6 +1,6 @@
-package Services;
+package services;
 
-import Entity.Categories;
+import entity.Categories;
 
 public interface CategoryService {
 

@@ -1,6 +1,6 @@
-package Services;
+package services;
 
-import Entity.Adverts;
+import entity.Adverts;
 
 import java.util.List;
 

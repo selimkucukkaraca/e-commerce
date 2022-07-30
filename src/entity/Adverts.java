@@ -1,4 +1,4 @@
-package Entity;
+package entity;
 
 import java.util.Date;
 
@@ -62,4 +62,17 @@ public class Adverts {
     public void setId(String id) {
         this.id = id;
     }
+
+
+    @Override
+    public String toString() {
+        return "Adverts{" +
+                "id='" + id + '\'' +
+                ", createAdvertDate=" + createAdvertDate +
+                ", title='" + title + '\'' +
+                ", body='" + body + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
+

@@ -1,4 +1,4 @@
-package Entity;
+package entity;
 
 public class Categories {
 
@@ -24,5 +24,13 @@ public class Categories {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Categories{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
