@@ -50,7 +50,7 @@ public class Main {
 
         BuyServiceImpl buyService = new BuyServiceImpl();
         buyService.buy(new Adverts());
-        System.out.println(buyService.buy(adverts));
+
 
 
         System.out.println("***************************************");

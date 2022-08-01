@@ -2,10 +2,7 @@ package services;
 
 import entity.Adverts;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 public class BuyServiceImpl implements BuyService{
 
@@ -14,7 +11,8 @@ public class BuyServiceImpl implements BuyService{
     public List<Adverts> buy(Adverts adverts) {
         Adverts adverts1 = new Adverts(UUID.randomUUID().toString(),new Date(),"Araba","2. El",124235);
 
-        System.out.println("ilandaki urun satin alindi : ");
-        return null;  // burda sorun oldu
+        System.out.println("ilandaki urun satin alindi : " + adverts1.getId());
+        System.out.println(adverts1.getTitle() + " isimli urun satin alindi");
+        return Arrays.asList(adverts1);  // burda sorun oldu
     }
 }
