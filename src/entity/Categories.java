@@ -10,6 +10,10 @@ public class Categories {
         this.name = name;
     }
 
+    public Categories(){
+
+    }
+
     public int getId() {
         return id;
     }
@@ -28,9 +32,8 @@ public class Categories {
 
     @Override
     public String toString() {
-        return "Categories{" +
+        return "Categories = " +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+                ", name='" + name + '\'';
     }
 }

@@ -54,11 +54,10 @@ public class Seller {
 
     @Override
     public String toString() {
-        return "Seller{" +
+        return "Seller = " +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", since=" + since +
-                '}';
+                ", since=" + since;
     }
 }

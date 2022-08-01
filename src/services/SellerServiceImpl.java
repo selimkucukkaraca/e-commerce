@@ -15,18 +15,19 @@ public class SellerServiceImpl implements SellerService{
         newSeller.setLastName(seller.getLastName());
         newSeller.setSince(new Date());
 
+        System.out.println(newSeller.getId() + " id'li satici eklendi.");
         return newSeller;
     }
 
     @Override
     public void delete(int id) {
-        System.out.println(id + " id'li kullanici silindi...");
+        System.out.println(id + " id'li satici silindi...");
 
     }
 
     @Override
     public void sell(int id) {
-        System.out.println(id + " id'li kullanici urunu satti.");
+        System.out.println(id + " id'li satici urunu satti.");
 
     }
 
@@ -39,6 +40,7 @@ public class SellerServiceImpl implements SellerService{
         updateSeller.setLastName(seller.getLastName());
         updateSeller.setFirstName(seller.getFirstName());
 
+        System.out.println(updateSeller.getId() + " id'li satici guncellendi");
         return updateSeller;
     }
 }
