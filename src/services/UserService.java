@@ -1,6 +1,6 @@
-package Services;
+package services;
 
-import Entity.User;
+import entity.User;
 
 public interface UserService {
 

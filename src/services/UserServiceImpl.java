@@ -1,6 +1,6 @@
-package Services;
+package services;
 
-import Entity.User;
+import entity.User;
 
 public class UserServiceImpl implements UserService {
 
@@ -20,6 +20,7 @@ public class UserServiceImpl implements UserService {
             return null;
         }
 
+        System.out.println(newUser.getId() + " id'li kullanici eklendi.");
         return newUser;
 
     }
@@ -39,6 +40,7 @@ public class UserServiceImpl implements UserService {
         updateUser.setFirstName(user.getFirstName());
         updateUser.setLastName(user.getLastName());
 
+        System.out.println(updateUser.getId() + " id'li kullanici guncellendi");
         return updateUser;
 
     }

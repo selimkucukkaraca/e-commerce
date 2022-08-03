@@ -1,6 +1,6 @@
-package Services;
+package services;
 
-import Entity.Adverts;
+import entity.Adverts;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -27,6 +27,7 @@ public class AdvertServiceImpl implements AdvertService {
             updatedAdverts.setId(adverts.getId());
 
         }
+        System.out.println(updatedAdverts.getId() + " id'li ilan guncellendi.");
         return updatedAdverts;
     }
 
@@ -38,6 +39,7 @@ public class AdvertServiceImpl implements AdvertService {
             listAdverts.add(adverts);
         }
 
+        System.out.println("yeni ilan eklendi");
         return listAdverts;
     }
 
